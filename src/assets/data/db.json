@@ -1,0 +1,20 @@
+{
+    "products": [
+      { "id": 1,
+         "name": "json-server", 
+         "category_id": "typicode",
+        "description": "Product description goes here",
+        "price": 20,
+        "is_available": true,
+        "rating": 3,
+        "reviews": 30,
+        "vendor_name": "Seller -1",
+        "warranty": 1
+        }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
+
