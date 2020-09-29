@@ -10,15 +10,22 @@ import { ViewAllComponent } from './products/view-all/view-all.component';
 import { ViewProductComponent } from './products/view-product/view-product.component';
 import { ViewByDateComponent } from './products/view-by-date/view-by-date.component';
 import { ViewByCategoryComponent } from './products/view-by-category/view-by-category.component';
-
-
+import {HttpClientModule} from "@angular/common/http"
+import {ProductServiceService} from "./product-service.service"
+import { FormsModule } from '@angular/forms';
+import {SharedModule} from "../shared/shared.module"
 
 @NgModule({
   declarations: [ProductsComponent, CreateProductComponent, AddProductComponent, UpdateProductComponent, DeleteProductComponent, ViewAllComponent, ViewProductComponent, ViewByDateComponent, ViewByCategoryComponent],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    HttpClientModule,    //that should go into app.module better
+    FormsModule,
+    SharedModule
   ],
- 
+  providers:[
+    ProductServiceService  //the same here, to app-moduke
+  ]
 })
 export class ProductsModule { }

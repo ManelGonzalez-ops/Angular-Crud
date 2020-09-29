@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-view-by-date',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewByDateComponent implements OnInit {
 
-  data: string
-  constructor() { }
+  searchDate: string
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(data=>{
+      this.searchDate = data.date
+    })
   }
 
 }

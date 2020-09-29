@@ -1,0 +1,18 @@
+<div [ngClass]="{ 'custom-modal': alwaysTrue, open: modalOpen }">
+  <div class="card" style="width: 18rem">
+    <div class="card-header">
+      <button type="button" aria-label="Close"
+      (click)="informParentToClose()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{productMarked && productMarked.name}}</h5>
+      <p class="card-text">
+        Are you sure you want to selte this product?
+      </p>
+      <button class="btn btn-danger" (click)="handleDelete()" >Delete</button>
+      <button class="btn btn-danger" (click)="informParentToClose()" >Close</button>
+    </div>
+  </div>
+</div>

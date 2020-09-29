@@ -1,20 +1,29 @@
 {
-    "products": [
-      { "id": 1,
-         "name": "json-server", 
-         "category_id": "typicode",
-        "description": "Product description goes here",
-        "price": 20,
-        "is_available": true,
-        "rating": 3,
-        "reviews": 30,
-        "vendor_name": "Seller -1",
-        "warranty": 1
-        }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "products": [
+    {
+      "id": 89426,
+      "name": "babolat Aero Pro",
+      "category_id": "Sports",
+      "price": 188,
+      "description": "la raqueta usada por Rafa Nadal, yeaaaaaa"
+    },
+    {
+      "id": 29550,
+      "name": "consolador",
+      "category_id": "adultos",
+      "price": 27,
+      "description": "Está usaaado",
+      "imageLink": ""
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
-
+}

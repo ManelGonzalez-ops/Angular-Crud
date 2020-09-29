@@ -1,0 +1,6 @@
+*notes:
+
+    A.  In UpdateProducts folder we have 2 different ways to handle two-binding forms, separated in diferent files, with and without NgModel
+
+    B.  In create product e have a example of one-way data-binding with NgModel
+

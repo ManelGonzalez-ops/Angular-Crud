@@ -1,5 +1,5 @@
 <h1>ID: {{ productId }}</h1>
-<form class="mt-xl-4" (submit)="addNewProduct($event)"  >
+<form class="mt-xl-4" (submit)="addNewProduct($event)" >
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="name">Product Name</label>
@@ -7,8 +7,7 @@
         type="text"
         class="form-control"
         name="namee"
-        [value]="namee"
-        (input)="namee = $event.target.value"
+        [(ngModel)]="namee"
       />
     </div>
     <div class="form-group col-md-6">
@@ -17,8 +16,7 @@
         type="text"
         class="form-control"
         name="category"
-        [value]="category"
-        (input)="category = $event.target.value"
+        [(ngModel)]="category"
       />
     </div>
   </div>
@@ -28,8 +26,7 @@
       type="number"
       class="form-control"
       name="price"
-      [value]="price"
-      (input)="price=$event.target.value"
+      [(ngModel)]="price"
       placeholder="10 eur"
     />
   </div>
@@ -39,8 +36,7 @@
       type="text"
       class="form-control"
       name="description"
-      [value]="description"
-      (input)="description=$event.target.value"
+      [(ngModel)]="description"
       placeholder="Apartment, studio, or floor"
     />
   </div>
@@ -51,8 +47,7 @@
         type="text"
         class="form-control"
         name="imageLink"
-        [value]="imageLink"
-        (input)="imageLink=$event.target.value"
+        [(ngModel)]="imageLink"
       />
     </div>
   </div>
@@ -68,4 +63,3 @@
 
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
-

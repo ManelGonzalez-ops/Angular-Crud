@@ -8,6 +8,7 @@ import {OrdersModule} from "./orders/orders.module";
 import {ComponentsModule} from "./components/components.module"
 
 
+//we never import the modules that we want to LazyLoad, instead, we do it in the route through LoadChildren
 
 @NgModule({
   declarations: [
@@ -19,9 +20,14 @@ import {ComponentsModule} from "./components/components.module"
     BrowserModule,
     AppRoutingModule,
     OrdersModule,
-    ComponentsModule
+    ComponentsModule,
+    
+  ],
+  exports:[
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
